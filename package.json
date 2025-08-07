@@ -1,0 +1,28 @@
+{
+  "name": "job-listings-fem",
+  "version": "1.0.0",
+  "description": "![Design preview for the Job listings with filtering coding challenge](preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grace-00/job-listings-fem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grace-00/job-listings-fem/issues"
+  },
+  "homepage": "https://github.com/Grace-00/job-listings-fem#readme",
+  "devDependencies": {
+    "@eslint/css": "^0.10.0",
+    "@eslint/js": "^9.32.0",
+    "@eslint/json": "^0.13.1",
+    "@eslint/markdown": "^7.1.0",
+    "eslint": "^9.32.0",
+    "globals": "^16.3.0"
+  }
+}
