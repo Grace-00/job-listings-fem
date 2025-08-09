@@ -12,3 +12,19 @@ img {
 .fill-bg {
  background-color: #5CA5A5;
 }
+
+.league-spartan-font {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.job-listing-card {
+  background-color: #EFFAFA;
+  border-radius: 100px;
+  padding: 0 21px;
+  margin: 16px 24px;
+  max-width: 100%;
+  max-height: 100%;
+}
