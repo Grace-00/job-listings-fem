@@ -29,7 +29,7 @@ img {
 
 .job-listing-card {
   background-color: #EFFAFA;
-  border-radius: 100px;
-  padding: 0 21px;
+  border-radius: 1em;
+  padding: 31px 45px;
   margin: 16px 24px;
 }
