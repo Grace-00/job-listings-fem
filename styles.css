@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #5CA5A5;
+  --secondary-color: #7c8f8f;
+  --font-family: "League Spartan", sans-serif;
+  --job-title-color: #000000; 
+}
+
 body {
  background-color: #EFFAFA;
 }
@@ -14,12 +21,6 @@ body {
  background-color: #5CA5A5;
 }
 
-.league-spartan-font {
-  font-family: "League Spartan", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
 
 .main-container {
   display: flex;
@@ -33,4 +34,36 @@ body {
   border-radius: 1em;
   padding: 31px 45px;
   margin: 16px 24px;
+
+  display: flex;
+  gap: 24px;
+}
+
+.job-listing-card-tag-list-container ul {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+}
+
+.job-listing-card-tag-list-container li {
+  background-color: #EFFAFA; 
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.job-listing-card-description {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.job-listing-card-description .job-listing-card-company-name,
+.job-listing-card-tag-list-container ul {
+  color: var(--primary-color);
+}
+
+.job-listing-card-description h2 {
+  font-weight: 700;
+  color: var(--job-title-color);
 }
