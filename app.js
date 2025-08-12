@@ -46,12 +46,13 @@ const getJobListing = (listing, card) => {
     companyLogo.alt = `${listing.company} logo`;
 
     const cardDescription = document.createElement('div');
-    card.classList.add('job-listing-card-description');
+    cardDescription.classList.add('job-listing-card-description');
     const companyName = document.createElement('p');
     companyName.classList.add('job-listing-card-company-name');
     companyName.textContent = listing.company;
 
-    const jobTitle = document.createElement('h2');
+    const jobTitle = document.createElement('p');
+    jobTitle.classList.add('job-listing-card-job-title');
     jobTitle.textContent = listing.position;
 
     const jobLocation = document.createElement('p');

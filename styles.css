@@ -61,9 +61,22 @@ body {
 .job-listing-card-description .job-listing-card-company-name,
 .job-listing-card-tag-list-container ul {
   color: var(--primary-color);
+  font-family: var(--font-family);
 }
 
-.job-listing-card-description h2 {
+.job-listing-card-description .job-listing-card-job-title, .job-listing-card-tag-list-container {
   font-weight: 700;
   color: var(--job-title-color);
+}
+
+.job-listing-card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.job-listing-card-tag-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
