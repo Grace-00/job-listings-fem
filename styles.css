@@ -3,6 +3,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  background-color: #EFFAFA;
 }
 
 img {
@@ -28,7 +29,7 @@ img {
 }
 
 .job-listing-card {
-  background-color: #EFFAFA;
+  background-color: white;
   border-radius: 1em;
   padding: 31px 45px;
   margin: 16px 24px;
