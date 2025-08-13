@@ -80,3 +80,8 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+.job-listing-card-filter-list {
+  display: flex;
+  gap: 8px;
+}

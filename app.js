@@ -24,13 +24,17 @@ getListings().then(listings => {
       const card = document.createElement('div');
       card.classList.add('job-listing-card');
 
-      const { cardDescription, jobTitle, companyName, jobLocation, companyLogo } = getJobListing(listing, card);
+      const { cardDescription, cardFilterList, jobTitle, companyName, jobLocation, companyLogo, contract, postedAt } = getJobListing(listing, card);
 
       const cardtagListContainer = getJobTagList(listing);
 
       cardDescription.appendChild(companyName);
       cardDescription.appendChild(jobTitle);
-      cardDescription.appendChild(jobLocation);
+
+      cardFilterList.appendChild(jobLocation);
+      cardFilterList.appendChild(contract);
+      cardFilterList.appendChild(postedAt);
+      cardDescription.appendChild(cardFilterList);
 
       card.appendChild(companyLogo);
       card.appendChild(cardDescription);
@@ -55,9 +59,17 @@ const getJobListing = (listing, card) => {
     jobTitle.classList.add('job-listing-card-job-title');
     jobTitle.textContent = listing.position;
 
+    const cardFilterList = document.createElement('div');
+    cardFilterList.classList.add('job-listing-card-filter-list');
     const jobLocation = document.createElement('p');
     jobLocation.textContent = listing.location;
-    return { cardDescription, jobTitle, companyName, jobLocation, companyLogo };
+
+    const contract = document.createElement('p');
+    contract.textContent = listing.contract;
+
+    const postedAt = document.createElement('p');
+    postedAt.textContent = listing.postedAt;
+    return { cardDescription, cardFilterList, jobTitle, companyName, jobLocation, companyLogo, contract, postedAt };
 }
 
 const getJobTagList = (listing) => {
