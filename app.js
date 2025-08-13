@@ -44,7 +44,7 @@ getListings().then(listings => {
     });
 });
 
-const getJobListing = (listing, card) => {
+const getJobListing = (listing) => {
     const companyLogo = document.createElement('img');
     companyLogo.src = listing.logo;
     companyLogo.alt = `${listing.company} logo`;
