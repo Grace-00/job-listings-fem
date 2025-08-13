@@ -24,7 +24,7 @@ getListings().then(listings => {
       const card = document.createElement('div');
       card.classList.add('job-listing-card');
 
-      const { cardDescription, cardFilterList, jobTitle, companyName, jobLocation, companyLogo, contract, postedAt } = getJobListing(listing, card);
+      const { cardDescription, cardFilterList, jobTitle, companyName, jobLocation, companyLogo, contract, postedAt } = getJobListing(listing);
 
       const cardtagListContainer = getJobTagList(listing);
 
