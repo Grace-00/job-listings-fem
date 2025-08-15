@@ -43,6 +43,12 @@ body {
   gap: 24px;
 }
 
+@media (max-width: 768px) {
+  .job-listing-card {
+   display: block;
+  }
+}
+
 .job-listing-card-tag-list-container ul {
   display: flex;
   list-style: none;
